@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abir El Halimi | Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue|Gabriela&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo-light.PNG"/>
+</head>
+<body>
+<div class="container">
+    <div>
+        <h1>Abir El Halimi</h1>
+        <h2>Software Engineer & Full Stack Developer</h2>
+    </div>
+    <div class="links">
+        <a href="https://github.com/abirelhalimi" target="_blank">
+            <img src="img/github-icon.png" alt="github-link">
+        </a>
+        <a href="https://www.linkedin.com/in/abir-el-halimi-6a404048/" target="_blank">
+            <img src="img/linkedin-icon.png" alt="linkedin-link">
+        </a>
+        <a href="https://dribbble.com/reginaxxphalange" target="_blank">
+            <img src="img/dribbble.png" alt="dribbble-link">
+        </a>
+        <a class="tooltip" onclick="copyToClipboard('#mail')">
+            <img src="img/gmail-icon.png" alt="gmail-link">
+            <span class="tooltiptext">Click me to copy mail</span>
+        </a>
+        <span class="mail" id="mail">abirelhalimi@gmail.com</span>
+    </div>
+
+    <div class="nav-bar">
+        <ul>
+            <li><a href="index.html">About me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html" style="border-bottom: 2px solid #404040;">Resume</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+
+        <button onclick="window.location.href='preview.html';target='_blank'">Preview Resume
+        </button>
+
+        <div class="timeline">
+
+            <h2>Work Experience</h2>
+            <div class="event">
+                <h3>Application Developer - Intern</h3>
+                <h4>Schneider Electric</h4>
+                <span>March 2020 - Present</span>
+                <p>Development of an energy trading application in association with blockchain in the energy access
+                    sector.</p>
+            </div>
+            <div class="event">
+                <h3>Full Stack Developer - Intern</h3>
+                <h4>SQLI</h4>
+                <span>July 2019 - August 2019</span>
+                <p>Web application for managing social projects built by free donations via the consultation of
+                    advertising videos.</p>
+            </div>
+
+            <h2>Education</h2>
+            <div class="event">
+                <h3>Software Engineering</h3>
+                <h4>National School for Computer Science</h4>
+                <span>2017 - Present</span>
+                <p>Three years program with the goal to obtain an Engineer's degree in computer science</p>
+
+            </div>
+            <div class="event">
+                <h3>Preparatory Classes</h3>
+                <h4>CPGE Tangier</h4>
+                <span>2015 - 2017</span>
+                <p>Two years preparatory course focused on maths and physics for enrolment in one of the higher
+                    engineering schools </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        Made with &hearts; by <a href="https://www.linkedin.com/in/abir-el-halimi-6a404048/" target="_blank">Abir El
+        Halimi</a>.
+    </div>
+
+</div>
+<div class="img-holder">
+    <div class="card">
+        <img class="img" src="img/logo.png" alt="my picture">
+    </div>
+</div>
+
+<script>
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
+
+    var card = document.querySelector('.card');
+    card.addEventListener('click', function () {
+        card.classList.toggle('is-flipped');
+    });
+</script>
+</body>
+</html>

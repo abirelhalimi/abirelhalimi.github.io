@@ -1,0 +1,395 @@
+@font-face {
+    font-family: 'Gabriola';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gabriola'), url('/resources/gabriola Font Download.woff') format('woff');
+}
+
+body {
+    background-color: #282828;
+    padding: 0;
+    margin: 0;
+    font-family: Gabriola, sans-serif;
+    color: #282828;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: lighter;
+    color: #675C5C;
+    margin: 0;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 0 0 0 10px;
+}
+
+h4 {
+    margin: 0 0 0 10px;
+}
+
+p {
+    margin: 0 0 0 10px;
+
+}
+
+ul {
+    margin-right: 50px;
+}
+
+ul li {
+    display: inline;
+    margin: 30px;
+    font-size: 30px;
+    color: #404040;
+}
+
+li a {
+    text-decoration: none;
+    color: #404040;
+}
+
+li a:hover {
+    border-bottom: 2px solid #404040;
+}
+
+li a:focus {
+    border-bottom: 2px solid #404040;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links:hover .mail {
+    display: block;
+}
+
+.mail:focus {
+    display: block;
+}
+
+.container {
+    background-color: #F1E6E6;
+    height: 100%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    margin: 150px 0 0;
+    padding-top: 100px;
+}
+
+.nav-bar {
+    margin-top: 20px;
+}
+
+.img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: solid 2px #E6BE8A;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 4px 7px #0000004d;
+
+}
+
+.card {
+    transition: transform 4s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+
+.img-holder {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.project-container {
+    max-width: 1600px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.project {
+    background: white;
+    margin: 20px;
+    border-radius: 20px;
+    width: 320px;
+    display: inline-block;
+    border: 2px solid #8A9191;
+    min-height: 400px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.project ul {
+    display: inline;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 280%;
+}
+
+.project li {
+    font-size: 15px;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #8A9191;
+    border-radius: 10px;
+}
+
+.btn-dark-outline {
+    text-decoration: none;
+    font-family: Gabriola, sans-serif;
+    font-size: 25px;
+    background-color: transparent;
+    padding: 0 10px;
+    min-width: 150px;
+    border-radius: 10px;
+    border: 1px solid #282828;
+    outline: none;
+    color: #282828;
+
+}
+
+.btn-dark-outline:hover {
+    background-color: #282828;
+    color: white;
+}
+
+.btn-light-outline {
+    text-decoration: none;
+    font-family: Gabriola, sans-serif;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0 10px;
+    min-width: 150px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    color: #F1E6E6;
+    opacity: 1;
+}
+
+.btn-light-outline:hover {
+    background-color: #F1E6E6;
+    opacity: 1;
+    color: #282828;
+}
+
+.project-img {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+}
+
+.title {
+    text-align: left;
+}
+
+.description {
+    text-align: left;
+    color: #8A9191;
+    margin-bottom: 20px;
+}
+
+/*Tooltip - Mail*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #282828;
+    color: #F1E6E6;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.mail {
+    display: none;
+}
+
+.wrapper {
+    background-color: #282828;
+    width: 650px;
+    height: 900px;
+    margin: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper button {
+    position: center;
+    font-size: 35px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/*about section*/
+.about-section {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.about-section div {
+    padding: 20px;
+}
+
+.about-section h2 {
+    color: #282828;
+    font-weight: bold;
+
+}
+
+.about-me p {
+    font-size: 23px;
+    margin-left: 25px;
+}
+
+.stack-container {
+    max-width: 1600px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.stack-item {
+    background: transparent;
+    height: 80px;
+    width: 100px;
+    margin: 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.stack-item img {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*end about section*/
+
+
+.content {
+    margin-top: 50px;
+}
+
+.content button {
+    text-decoration: none;
+    font-family: Gabriola, sans-serif;
+    font-size: 25px;
+    background-color: #282828;
+    padding: 0 10px;
+    min-width: 200px;
+    border-radius: 10px;
+    outline: none;
+    margin: 10px;
+    color: white;
+    border: none;
+}
+
+.content button:hover {
+    font-size: 30px;
+    width: 230px;
+}
+
+strong {
+    color: #8A9191;
+}
+
+/*timeline*/
+.timeline {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 35px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.timeline h2 {
+    font-weight: 600;
+    color: #282828;
+}
+
+.event {
+    overflow: hidden;
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px auto 20px 20px;
+    color: #282828;
+    display: inline-block;
+}
+
+.event p {
+    color: #8A9191;
+    margin-top: 10px;
+}
+
+.event span {
+    margin: 0 0 0 10px;
+}
+
+
+/*end of timeline*/
+
+.footer a {
+    text-decoration: none;
+    color: #8A9191;
+    font-weight: bold;
+}
+
