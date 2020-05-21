@@ -1,39 +1,38 @@
-@font-face {
-    font-family: 'Gabriola';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gabriola'), url('/resources/gabriola Font Download.woff') format('woff');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700;900&display=swap');
 body {
-    background-color: #282828;
+    background-color: #bae8e8;
     padding: 0;
     margin: 0;
-    font-family: Gabriola, sans-serif;
-    color: #282828;
+    font-family: 'livvic';
+    font-weight: 400;
+    color: #272343;
     text-align: center;
 }
 
 h1 {
     font-size: 50px;
-    font-weight: normal;
+    font-weight: bold;
     margin: 0;
+    padding-top: 30px;
 }
 
 h2 {
-    font-size: 35px;
-    font-weight: lighter;
-    color: #675C5C;
+    font-size: 30px;
+    font-weight: 400;
+    color: #272343;
     margin: 0;
+    padding: 30px;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 25px;
     margin: 0 0 0 10px;
+    padding-bottom: 10px;
 }
 
 h4 {
     margin: 0 0 0 10px;
+    padding-bottom: 10px;
 }
 
 p {
@@ -49,20 +48,21 @@ ul li {
     display: inline;
     margin: 30px;
     font-size: 30px;
-    color: #404040;
+    color: #ff9f1c;
 }
 
 li a {
     text-decoration: none;
-    color: #404040;
+    color: #ff9f1c;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
-
 li a:hover {
-    border-bottom: 2px solid #404040;
+    border-bottom: 2px solid #ff9f1c;
 }
 
 li a:focus {
-    border-bottom: 2px solid #404040;
+    border-bottom: 2px solid #ff9f1c;
 }
 
 .links {
@@ -88,10 +88,8 @@ li a:focus {
 }
 
 .container {
-    background-color: #F1E6E6;
+    background-color: #ffffff;
     height: 100%;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
     text-align: center;
     align-items: center;
     position: relative;
@@ -328,68 +326,70 @@ li a:focus {
 
 .content button {
     text-decoration: none;
-    font-family: Gabriola, sans-serif;
+    font-family: livvic, sans-serif;
+    font-weight: 500;
     font-size: 25px;
-    background-color: #282828;
-    padding: 0 10px;
+    background-color: #bae8e8;
+    padding: 10px 20px 10px 20px;
     min-width: 200px;
     border-radius: 10px;
     outline: none;
     margin: 10px;
-    color: white;
+    color: #272343;
     border: none;
 }
 
 .content button:hover {
-    font-size: 30px;
-    width: 230px;
+    background-color:#272343 ;
+    color: #FFFFFF;
 }
 
 strong {
-    color: #8A9191;
+    color: #ff9f1c;
 }
 
 /*timeline*/
 .timeline {
     margin: 30px auto;
-    max-width: 800px;
+    max-width: 900px;
     padding: 35px;
     text-align: left;
     overflow: hidden;
 }
 
 .timeline h2 {
-    font-weight: 600;
+    font-weight: 500;
     color: #282828;
 }
 
 .event {
     overflow: hidden;
-    background-color: white;
-    width: 350px;
+    background-color: #cbf3f0;
+    width: 400px;
     height: 200px;
     border-radius: 20px;
     padding: 10px;
     margin: 20px auto 20px 20px;
     color: #282828;
     display: inline-block;
+    text-align: center;
 }
 
 .event p {
-    color: #8A9191;
+    color: #272343;
+    font-size: 20px;
     margin-top: 10px;
+    text-align: left;
 }
-
-.event span {
-    margin: 0 0 0 10px;
-}
-
 
 /*end of timeline*/
-
+.footer {
+    padding: 20px;
+}
 .footer a {
     text-decoration: none;
-    color: #8A9191;
+    color: #272343;
     font-weight: bold;
+    margin: 20px;
 }
 
